@@ -7,8 +7,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.LazyLoadBase;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.registry.Registry;
 
 import java.util.function.Supplier;
 
@@ -52,17 +50,11 @@ public enum HammerMaterials implements IItemTier {
     SLIME(2, 1500 * VanillaHammers.DURABILITY_MODIFIER, 6f / 3.5f, 0, 20, () -> {
         return Ingredient.fromItems(Items.SLIME_BALL);
     }),
-    POTATO(1, 500 * VanillaHammers.DURABILITY_MODIFIER, 4.0F / 3.5f, 0.0f, 100, () -> {
-        return Ingredient.fromItems(Registry.ITEM.getOrDefault(new ResourceLocation("lil-tater", "lil_tater")));
-    }),
-    GLOWSTONE(2, 442 * VanillaHammers.DURABILITY_MODIFIER, 5.0F / 3.5f, 0.0f, 15, () -> {
-        return Ingredient.fromItems(Registry.ITEM.getOrDefault(new ResourceLocation("netherthings", "glowstone_ingot")));
+    GLOWSTONE(2, 189 * VanillaHammers.DURABILITY_MODIFIER, 5.0F / 3.5f, 0.0f, 15, () -> {
+        return Ingredient.fromItems(Items.GLOWSTONE);
     }),
     NETHER(1, 280 * VanillaHammers.DURABILITY_MODIFIER, 5.0F / 3.5f, 0.0f, 77, () -> {
-        return Ingredient.fromItems(Registry.ITEM.getOrDefault(new ResourceLocation("netherthings", "nether_brick")));
-    }),
-    VIBRANIUM(3, (int) (21850d * (VanillaHammers.DURABILITY_MODIFIER / 2.5f)), 22f / 3.5f, 0.0f, 7, () -> {
-        return Ingredient.fromItems(Registry.ITEM.getOrDefault(new ResourceLocation("netherthings", "vibranium")));
+        return Ingredient.fromItems(Items.NETHER_BRICKS);
     });
 
     private final int harvestLevel;

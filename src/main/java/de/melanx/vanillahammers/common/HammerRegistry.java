@@ -29,20 +29,10 @@ public class HammerRegistry {
         SLIME = register(HammerMaterials.SLIME, 7, -3f, "slime");
 //        }
 
-
-//        if(AutoConfig.getConfigHolder(VanillaHammersConfig.class).getConfig().enableTaterHammer)
-//        {
-//            if (FabricLoader.getInstance().isModLoaded("lil-tater"))
-//            {
-                register(HammerMaterials.POTATO, 3, -2.3f, "tater");
-//            }
-//        }
-
 //        if(FabricLoader.getInstance().isModLoaded("netherthings"))
 //        {
             register(HammerMaterials.GLOWSTONE, 5, -2.3f, "glowstone");
             register(HammerMaterials.NETHER, 4, -2.1f, "nether");
-            register(HammerMaterials.VIBRANIUM, 10, -2.9f, "vibranium");
 //        }
     }
 
