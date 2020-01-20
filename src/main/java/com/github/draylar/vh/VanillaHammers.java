@@ -17,5 +17,4 @@ public class VanillaHammers {
         HammerRegistry.registerHammers();
         MinecraftForge.EVENT_BUS.register(this);
     }
-//		FurnaceFuelBurnTimeEvent.INSTANCE.add(HammerRegistry.WOOD, 400);
 }

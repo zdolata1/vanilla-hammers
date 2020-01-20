@@ -10,12 +10,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class HammerItem extends PickaxeItem {
-    public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
-        this(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
-    }
+    private IItemTier toolMaterial;
 
-    public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed, Item.Properties settings) {
-        super(toolMaterial, attackDamage, attackSpeed, settings);
+    public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
+        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
+        this.toolMaterial = toolMaterial;
     }
 
     @Override
@@ -38,6 +37,10 @@ public class HammerItem extends PickaxeItem {
         }
 
         return true;
+    }
+
+    public IItemTier getToolMaterial() {
+        return toolMaterial;
     }
 }
 
