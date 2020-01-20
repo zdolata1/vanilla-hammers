@@ -7,7 +7,7 @@ version="${file.jarVersion}"
 displayName="Vanilla Hammers"
 updateJSONURL="https://raw.githubusercontent.com/MelanX/vanilla-hammers/master/update/update.json"
 authors="MelanX"
-credits="Draylar made this mod for Fabric, this is just a fork for Forge."
+credits="Draylar made this mod for Fabric, this is just a fork for Forge. Anvil in logo is trademark of MinecraftForge."
 icon="assets/vanillahammers/icon.png"
 description='''
 Adds a ton of new hammers to the game!
