@@ -13,15 +13,5 @@
   "item.vanillahammers.slime_hammer": "Schleimhammer",
   "item.vanillahammers.ender_hammer": "Enderhammer",
   "item.vanillahammers.glowstone_hammer": "Glowstonehammer",
-  "item.vanillahammers.nether_hammer": "Netherhammer",
-
-  "text.autoconfig.vanillahammers.option.fullBlockHitbox": "Volle Block Hitbox",
-  "text.autoconfig.vanillahammers.option.enableExtraMaterials": "Extra Vanilla Material Hammer",
-  "text.autoconfig.vanillahammers.option.enableTaterHammer": "Tater Hammer",
-  "text.autoconfig.vanillahammers.option.enableFull3x3": "Volle 3x3 Hitbox",
-  "text.autoconfig.vanillahammers.option.alwaysShowSingleBlockHitbox": "Immer nur Einzelblock Hitbox anzeigen",
-  "text.autoconfig.vanillahammers.option.showSingleBlockWhenSneaking": "Einzelblock Hizbox beim Ducken",
-  "text.autoconfig.vanillahammers.option.breakSingleBlockWhenSneaking": "Einzelblock Abbauen beim Ducken",
-  "text.autoconfig.vanillahammers.category.default": "Allgemeines",
-  "text.autoconfig.vanillahammers.title": "Vanilla Hammers Einstellungen"
+  "item.vanillahammers.nether_hammer": "Netherhammer"
 }

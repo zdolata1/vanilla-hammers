@@ -15,15 +15,5 @@
   "item.vanillahammers.glowstone_hammer": "Glowstone Hammer",
   "item.vanillahammers.nether_hammer": "Nether Hammer",
 
-  "text.autoconfig.vanillahammers.option.fullBlockHitbox": "Full Block Hitbox",
-  "text.autoconfig.vanillahammers.option.enableExtraMaterials": "Extra Vanilla Material Hammers",
-  "text.autoconfig.vanillahammers.option.enableTaterHammer": "Tater Hammer",
-  "text.autoconfig.vanillahammers.option.enableFull3x3": "Full 3x3 Hitbox",
-  "text.autoconfig.vanillahammers.option.alwaysShowSingleBlockHitbox": "Always Show Single Hitbox",
-  "text.autoconfig.vanillahammers.option.showSingleBlockWhenSneaking": "Single Hitbox When Sneaking",
-  "text.autoconfig.vanillahammers.option.breakSingleBlockWhenSneaking": "Single Break When Sneaking",
-  "text.autoconfig.vanillahammers.category.default": "General",
-  "text.autoconfig.vanillahammers.title": "Vanilla Hammers Config",
-
   "item.vanillahammers.dynagear_hammer": "%s Hammer"
 }
