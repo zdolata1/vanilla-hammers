@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+
+[[mods]]
+modId="vanillahammers"
+version="${file.jarVersion}"
+displayName="More XFood"
+updateJSONURL="https://raw.githubusercontent.com/MelanX/vanilla-hammers/master/update/update.json"
+authors="MelanX"
+credits="Draylar made this mod for Fabric, this is just a fork for Forge."
+icon="assets/vanillahammers/icon.png"
+description='''
+Adds a ton of new hammers to the game!
+'''
+[[dependencies.vanillahammers]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.vanillahammers]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"

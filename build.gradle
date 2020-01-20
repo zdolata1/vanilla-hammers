@@ -1,57 +1,104 @@
-plugins {
-	id 'fabric-loom' version '0.2.6-SNAPSHOT'
+buildscript {
+	repositories {
+		maven { url = 'https://files.minecraftforge.net/maven' }
+		maven { url "https://plugins.gradle.org/m2/" }
+		jcenter()
+		mavenCentral()
+	}
+	dependencies {
+		classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+	}
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
 
-archivesBaseName = "vanilla-hammers"
-version = "1.6.3"
+version = "${mc_version}-${mod_version}"
+group = 'de.melanx.vanillahammers'
+archivesBaseName = 'vanillahammers'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
+	mappings channel: 'snapshot', version: '20200110-1.14.3'
+
+	runs {
+		client {
+			workingDirectory project.file('run')
+
+			property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+			property 'forge.logging.console.level', 'debug'
+
+			mods {
+				vanillahammers {
+					source sourceSets.main
+				}
+			}
+		}
+
+		server {
+			workingDirectory project.file('run_server')
+
+			property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+			property 'forge.logging.console.level', 'debug'
+
+			mods {
+				vanillahammers {
+					source sourceSets.main
+				}
+			}
+		}
+
+		data {
+			workingDirectory project.file('run_data')
+
+			// Recommended logging data for a userdev environment
+			property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+			// Recommended logging level for the console
+			property 'forge.logging.console.level', 'debug'
+
+			args '--mod', 'vanillahammers', '--all', '--output', '"' + file('src/generated/resources/') + '"', '--existing', '"' + file('src/main/resources/') + '"'
+
+			mods {
+				vanillahammers {
+					source sourceSets.main
+				}
+			}
+		}
+	}
+}
+
+sourceSets.main.resources {
+	srcDir 'src/generated/resources'
 }
 
 repositories {
-	jcenter()
-
-	maven { url = "https://maven.fabricmc.net/" }
-	maven { url = 'http://maven.sargunv.s3-website-us-west-2.amazonaws.com/' }
-	maven { url = 'http://server.bbkr.space:8081/artifactory/libs-release' }
-	maven { url = 'https://jitpack.io' }
-	maven { url "https://maven.swordglowsblue.com" }
-
-	jcenter()
+	maven {
+		// location of the maven that hosts JEI files
+		name = "Progwml6 maven"
+		url = "https://dvs1.progwml6.com/files/maven/"
+	}
 }
-
 
 dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_build}"
-	modApi "net.fabricmc:fabric-loader:${project.loader_version}"
-	modApi "net.fabricmc.fabric-api:fabric-api:${project.api_version}"
-
-	// LibCD for conditional recipes
-	modApi "io.github.cottonmc:LibCD:${project.libcd_version}"
-	include "io.github.cottonmc:LibCD:${project.libcd_version}"
-
-	// config
-	modCompile "me.shedaniel.cloth:config-2:${project.cloth_config_version}"
-	include "me.shedaniel.cloth:config-2:${project.cloth_config_version}"
-	modCompile "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_version}"
-	include "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_version}"
-
-	// DynaGear for hammers in more materials
-	modApi "io.github.cottonmc:DynaGear:${project.dynagear_version}"
-  modApi "artificemc:artifice:0.3.4"
-
-	// dev modmenu
-	modCompile "io.github.prospector:modmenu:${project.mod_menu_version}"
+	minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
+	runtimeOnly fg.deobf("mezz.jei:jei-1.14.4:6.0.0.18")
 }
 
-// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-// if it is present.
-// If you remove this task, sources will not be generated.
-task sourcesJar(type: Jar, dependsOn: classes) {
-	classifier = 'sources'
-	from sourceSets.main.allSource
+jar {
+	manifest {
+		attributes([
+				"Specification-Title": "vanillahammers",
+				"Specification-Vendor": "vanillahammers",
+				"Specification-Version": "1", // We are version 1 of ourselves
+				"Implementation-Title": project.name,
+				"Implementation-Version": "${version}",
+				"Implementation-Vendor" :"vanillahammers",
+				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+		])
+	}
 }
