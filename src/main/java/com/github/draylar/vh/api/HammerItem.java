@@ -1,11 +1,10 @@
 package com.github.draylar.vh.api;
 
+import com.github.draylar.vh.common.HammerMaterials;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -37,6 +36,12 @@ public class HammerItem extends PickaxeItem {
         }
 
         return true;
+    }
+
+    @Override
+    public void onCreated(ItemStack stack, World world, PlayerEntity player) {
+        if (this.getToolMaterial() == HammerMaterials.SLIME)
+            stack.addEnchantment(Enchantments.KNOCKBACK, 3);
     }
 
     public IItemTier getToolMaterial() {
