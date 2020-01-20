@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "vanilla-hammers:item/wooden_hammer"
+    "layer0": "vanillahammers:item/wooden_hammer"
   }
 }

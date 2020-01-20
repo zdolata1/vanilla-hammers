@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "vanilla-hammers:item/nether_hammer"
+    "layer0": "vanillahammers:item/nether_hammer"
   }
 }
