@@ -1,6 +1,6 @@
-package com.github.draylar.vh.common;
+package de.melanx.vanillahammers.common;
 
-import com.github.draylar.vh.VanillaHammers;
+import de.melanx.vanillahammers.VanillaHammers;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;

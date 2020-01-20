@@ -1,4 +1,4 @@
-package com.github.draylar.vh.api;
+package de.melanx.vanillahammers.api;
 
 import net.minecraft.block.BlockState;
 

@@ -1,6 +1,6 @@
-package com.github.draylar.vh;
+package de.melanx.vanillahammers;
 
-import com.github.draylar.vh.common.HammerRegistry;
+import de.melanx.vanillahammers.common.HammerRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 

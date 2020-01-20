@@ -1,4 +1,4 @@
-package com.github.draylar.vh.config;
+package de.melanx.vanillahammers.config;
 
 //@Config(name = "vanilla-hammers")
 public class VanillaHammersConfig // implements ConfigData

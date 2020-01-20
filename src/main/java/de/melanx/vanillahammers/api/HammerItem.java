@@ -1,6 +1,6 @@
-package com.github.draylar.vh.api;
+package de.melanx.vanillahammers.api;
 
-import com.github.draylar.vh.common.HammerMaterials;
+import de.melanx.vanillahammers.common.HammerMaterials;
 import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;

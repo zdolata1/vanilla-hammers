@@ -1,7 +1,7 @@
-package com.github.draylar.vh.common;
+package de.melanx.vanillahammers.common;
 
-import com.github.draylar.vh.VanillaHammers;
-import com.github.draylar.vh.api.HammerItem;
+import de.melanx.vanillahammers.VanillaHammers;
+import de.melanx.vanillahammers.api.HammerItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
