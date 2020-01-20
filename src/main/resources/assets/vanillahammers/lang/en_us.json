@@ -13,7 +13,5 @@
   "item.vanillahammers.slime_hammer": "Slime Hammer",
   "item.vanillahammers.ender_hammer": "Ender Hammer",
   "item.vanillahammers.glowstone_hammer": "Glowstone Hammer",
-  "item.vanillahammers.nether_hammer": "Nether Hammer",
-
-  "item.vanillahammers.dynagear_hammer": "%s Hammer"
+  "item.vanillahammers.nether_hammer": "Nether Hammer"
 }
