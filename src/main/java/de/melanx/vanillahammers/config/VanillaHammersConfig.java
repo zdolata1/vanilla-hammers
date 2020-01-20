@@ -1,13 +1,37 @@
 package de.melanx.vanillahammers.config;
 
-//@Config(name = "vanilla-hammers")
-public class VanillaHammersConfig // implements ConfigData
-{
-    public boolean enableExtraMaterials = true;
-    public boolean enableTaterHammer = true;
-    public boolean enableFull3x3 = false;
-    public boolean fullBlockHitbox = false;
-    public boolean alwaysShowSingleBlockHitbox = false;
-    public boolean showSingleBlockWhenSneaking = true;
-    public boolean breakSingleBlockWhenSneaking = true;
+import com.electronwill.nightconfig.core.file.CommentedFileConfig;
+import com.electronwill.nightconfig.core.io.WritingMode;
+import de.melanx.vanillahammers.VanillaHammers;
+import net.minecraftforge.common.ForgeConfigSpec;
+
+import java.nio.file.Path;
+
+public class VanillaHammersConfig {
+
+    private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SERVER_CONFIG;
+
+    static {
+        init(SERVER_BUILDER);
+
+        SERVER_CONFIG = SERVER_BUILDER.build();
+    }
+
+    public static ForgeConfigSpec.BooleanValue extraHammers;
+
+    public static void init(ForgeConfigSpec.Builder builder) {
+        extraHammers = builder.comment("If set true, extra hammer types will be loaded")
+                .define("extraHammers", true);
+    }
+
+    public static void loadConfig(ForgeConfigSpec spec, Path path) {
+        VanillaHammers.LOGGER.debug("Loading config file {}", path);
+
+        final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().autosave().writingMode(WritingMode.REPLACE).build();
+
+        configData.load();
+
+        spec.setConfig(configData);
+    }
 }

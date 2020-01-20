@@ -2,6 +2,7 @@ package de.melanx.vanillahammers.common;
 
 import de.melanx.vanillahammers.VanillaHammers;
 import de.melanx.vanillahammers.api.HammerItem;
+import de.melanx.vanillahammers.config.VanillaHammersConfig;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -18,7 +19,7 @@ public class HammerRegistry {
         register(HammerMaterials.GOLD, 5, -2.5f, "golden");
         register(HammerMaterials.DIAMOND, 10, -3f, "diamond");
 
-//        if (AutoConfig.getConfigHolder(VanillaHammersConfig.class).getConfig().enableExtraMaterials) {
+        if (VanillaHammersConfig.extraHammers.get()) {
             register(HammerMaterials.EMERALD, 11, -3f, "emerald");
             register(HammerMaterials.OBSIDIAN, 7, -3.5f, "obsidian");
             register(HammerMaterials.QUARTZ, 5, -2f, "lapis");
@@ -26,14 +27,10 @@ public class HammerRegistry {
             register(HammerMaterials.FIERY, 6, -2.3f, "fiery");
             register(HammerMaterials.PRISMARINE, 6, -2.3f, "prismarine");
             register(HammerMaterials.ENDER, 10, -3.3f, "ender");
-        SLIME = register(HammerMaterials.SLIME, 7, -3f, "slime");
-//        }
-
-//        if(FabricLoader.getInstance().isModLoaded("netherthings"))
-//        {
+            SLIME = register(HammerMaterials.SLIME, 7, -3f, "slime");
             register(HammerMaterials.GLOWSTONE, 5, -2.3f, "glowstone");
             register(HammerMaterials.NETHER, 4, -2.1f, "nether");
-//        }
+        }
     }
 
     private static HammerItem register(IItemTier material, int attackDamage, float attackSpeed, String hammerName) {
