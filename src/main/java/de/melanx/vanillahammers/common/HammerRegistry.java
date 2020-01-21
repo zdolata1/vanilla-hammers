@@ -4,7 +4,6 @@ import de.melanx.vanillahammers.VanillaHammers;
 import de.melanx.vanillahammers.api.HammerItem;
 import de.melanx.vanillahammers.config.VanillaHammersConfig;
 import net.minecraft.item.IItemTier;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 
@@ -34,14 +33,6 @@ public class HammerRegistry {
     }
 
     private static HammerItem register(IItemTier material, int attackDamage, float attackSpeed, String hammerName) {
-        HammerItem hammer = new HammerItem(material, attackDamage, attackSpeed) {
-            @Override
-            public int getBurnTime(ItemStack stack) {
-                if (getToolMaterial() == HammerMaterials.WOOD)
-                    return 400;
-                return 0;
-            }
-        };
-        return Registry.register(Registry.ITEM, new ResourceLocation(VanillaHammers.MODID, hammerName + "_hammer"), hammer);
+        return Registry.register(Registry.ITEM, new ResourceLocation(VanillaHammers.MODID, hammerName + "_hammer"), new HammerItem(material, attackDamage, attackSpeed));
     }
 }

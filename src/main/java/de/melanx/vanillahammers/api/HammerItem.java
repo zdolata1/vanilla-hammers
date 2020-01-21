@@ -5,6 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -12,7 +13,7 @@ public class HammerItem extends PickaxeItem {
     private IItemTier toolMaterial;
 
     public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
-        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
+        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties());
         this.toolMaterial = toolMaterial;
     }
 
@@ -42,6 +43,24 @@ public class HammerItem extends PickaxeItem {
     public void onCreated(ItemStack stack, World world, PlayerEntity player) {
         if (this.getToolMaterial() == HammerMaterials.SLIME)
             stack.addEnchantment(Enchantments.KNOCKBACK, 3);
+    }
+
+    @Override
+    public int getBurnTime(ItemStack stack) {
+        if (getToolMaterial() == HammerMaterials.WOOD)
+            return 400;
+        return 0;
+    }
+
+    @Override
+    public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
+        if (group == ItemGroup.TOOLS || group == ItemGroup.SEARCH) {
+            ItemStack item = new ItemStack(this);
+            if (this.getToolMaterial() == HammerMaterials.SLIME) {
+                item.addEnchantment(Enchantments.KNOCKBACK, 3);
+            }
+            items.add(item);
+        }
     }
 
     public IItemTier getToolMaterial() {
