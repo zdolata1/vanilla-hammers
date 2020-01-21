@@ -8,11 +8,8 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 
 public class HammerRegistry {
-    public static HammerItem WOOD;
-    public static HammerItem SLIME;
-
     public static void registerHammers() {
-        WOOD = register(HammerMaterials.WOOD, 3, -2.5f, "wooden");
+        register(HammerMaterials.WOOD, 3, -2.5f, "wooden");
         register(HammerMaterials.STONE, 4, -2.6f, "stone");
         register(HammerMaterials.IRON, 5, -2.8f, "iron");
         register(HammerMaterials.GOLD, 5, -2.5f, "golden");
@@ -26,7 +23,7 @@ public class HammerRegistry {
             register(HammerMaterials.FIERY, 6, -2.3f, "fiery");
             register(HammerMaterials.PRISMARINE, 6, -2.3f, "prismarine");
             register(HammerMaterials.ENDER, 10, -3.3f, "ender");
-            SLIME = register(HammerMaterials.SLIME, 7, -3f, "slime");
+            register(HammerMaterials.SLIME, 7, -3f, "slime");
             register(HammerMaterials.GLOWSTONE, 5, -2.3f, "glowstone");
             register(HammerMaterials.NETHER, 4, -2.1f, "nether");
         }
