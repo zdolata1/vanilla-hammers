@@ -36,8 +36,7 @@ public class HammerRegistry {
 
     private static RegistryObject<Item> register(HammerMaterials type) {
         String name = type.getPrefix();
-        int attackDamage = (int) type.getAttackDamage();
         float attackSpeed = type.getAttackSpeed();
-        return ITEMS.register(name + "_hammer", () -> new HammerItem(type, attackDamage, attackSpeed));
+        return ITEMS.register(name + "_hammer", () -> new HammerItem(type, 0, attackSpeed));
     }
 }
