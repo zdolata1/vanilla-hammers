@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vanillahammers",
+  "pattern": [
+    "DdD",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:dusts/prismarine"
+    },
+    "D": {
+      "tag": "forge:prismarine"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillahammers:prismarine_hammer"
+  }
+}

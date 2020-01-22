@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vanillahammers",
+  "pattern": [
+    "DdD",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:heads/dragon_head"
+    },
+    "D": {
+      "tag": "forge:end_stones"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillahammers:ender_hammer"
+  }
+}

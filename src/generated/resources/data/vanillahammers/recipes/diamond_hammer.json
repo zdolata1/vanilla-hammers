@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vanillahammers",
+  "pattern": [
+    "DdD",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:gems/diamond"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillahammers:diamond_hammer"
+  }
+}

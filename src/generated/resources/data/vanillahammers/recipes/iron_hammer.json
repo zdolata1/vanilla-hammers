@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vanillahammers",
+  "pattern": [
+    "DdD",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:ingots/iron"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillahammers:iron_hammer"
+  }
+}

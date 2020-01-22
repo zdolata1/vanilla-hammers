@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vanillahammers",
+  "pattern": [
+    "DdD",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "d": {
+      "tag": "forge:gems/quartz"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/quartz"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillahammers:quartz_hammer"
+  }
+}
