@@ -13,7 +13,7 @@ public class HammerItem extends PickaxeItem {
     private IItemTier toolMaterial;
 
     public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
-        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties());
+        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
         this.toolMaterial = toolMaterial;
     }
 
