@@ -20,11 +20,10 @@ public class DataCreator {
         if (event.includeServer()) {
             generator.addProvider(new ItemTags(generator));
             generator.addProvider(new BlockTags(generator));
-//            Not working atm
             generator.addProvider(new Recipes(generator));
         }
         if (event.includeClient()) {
-
+            generator.addProvider(new ItemModels(generator, helper));
         }
     }
 
