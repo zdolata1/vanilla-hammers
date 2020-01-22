@@ -9,16 +9,15 @@ import java.nio.file.Path;
 
 public class VanillaHammersConfig {
 
-    private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SERVER_CONFIG;
+    private static final ForgeConfigSpec.Builder SERVER_BUILDER = new ForgeConfigSpec.Builder();
+    public static ForgeConfigSpec.BooleanValue extraHammers;
 
     static {
         init(SERVER_BUILDER);
 
         SERVER_CONFIG = SERVER_BUILDER.build();
     }
-
-    public static ForgeConfigSpec.BooleanValue extraHammers;
 
     public static void init(ForgeConfigSpec.Builder builder) {
         extraHammers = builder.comment("If set true, extra hammer types will be loaded")

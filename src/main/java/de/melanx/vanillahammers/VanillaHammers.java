@@ -12,10 +12,10 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(VanillaHammers.MODID)
 public class VanillaHammers {
-    public static VanillaHammers instance;
     public static final String MODID = "vanillahammers";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
     public static final int DURABILITY_MODIFIER = 5;
+    public static VanillaHammers instance;
 
     public VanillaHammers() {
         instance = this;
