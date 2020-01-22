@@ -1,6 +1,5 @@
 package de.melanx.vanillahammers.data.tags;
 
-import de.melanx.vanillahammers.data.tags.ModTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
 import net.minecraft.item.Items;
