@@ -19,7 +19,7 @@ public class HammerItem extends PickaxeItem {
 
     @Override
     public boolean canPlayerBreakBlockWhileHolding(BlockState state, World world, BlockPos pos, PlayerEntity player) {
-        if (player.isSneaking()) {
+        if (player.isCrouching()) {
             return true;
         }
 
