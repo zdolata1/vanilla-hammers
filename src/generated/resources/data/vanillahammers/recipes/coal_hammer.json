@@ -8,13 +8,13 @@
   ],
   "key": {
     "D": {
-      "tag": "forge:storage_blocks/lapis"
+      "tag": "forge:storage_blocks/coal"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "vanillahammers:lapis_hammer"
+    "item": "vanillahammers:coal_hammer"
   }
 }

@@ -13,5 +13,9 @@
   "item.vanillahammers.slime_hammer": "Schleimhammer",
   "item.vanillahammers.ender_hammer": "Enderhammer",
   "item.vanillahammers.glowstone_hammer": "Glowstonehammer",
-  "item.vanillahammers.nether_hammer": "Netherhammer"
+  "item.vanillahammers.nether_hammer": "Netherhammer",
+  "item.vanillahammers.coal_hammer": "Kohlehammer",
+  "item.vanillahammers.bone_hammer": "Knochenhammer",
+  "item.vanillahammers.redstone_hammer": "Redstonehammer",
+  "item.vanillahammers.paper_hammer": "Papierhammer"
 }

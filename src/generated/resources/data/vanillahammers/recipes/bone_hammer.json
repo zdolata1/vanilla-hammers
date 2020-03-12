@@ -8,13 +8,13 @@
   ],
   "key": {
     "D": {
-      "tag": "forge:storage_blocks/lapis"
+      "tag": "forge:bone_block"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "vanillahammers:lapis_hammer"
+    "item": "vanillahammers:bone_hammer"
   }
 }
