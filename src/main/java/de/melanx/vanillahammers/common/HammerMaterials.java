@@ -29,12 +29,10 @@ public enum HammerMaterials implements IItemTier {
         return Ingredient.fromTag(Tags.Items.GEMS_DIAMOND);
     }, "diamond", Tags.Items.GEMS_DIAMOND, Tags.Items.STORAGE_BLOCKS_DIAMOND),
 
-    // TODO configure
-    BONE(1, 206, 4.9F / 3.5F, 2, 2, 17, () -> {
+    BONE(1, 206, 4.9F / 3.5F, 4, -2.0F, 17, () -> {
         return Ingredient.fromTag(Tags.Items.BONES);
     }, "bone", ModTags.Items.BONE_BLOCK),
-    // TODO configure
-    COAL(1, 155, 4.9F / 3.5F, 2, 2, 17, () -> {
+    COAL(1, 155, 4.9F / 3.5F, 4, -2.6F, 17, () -> {
         return Ingredient.fromItems(Items.COAL);
     }, "coal", Tags.Items.STORAGE_BLOCKS_COAL),
     EMERALD(3, 1859, 12.0F / 3.5f, 11, -3.0F, 25, () -> {
@@ -58,8 +56,7 @@ public enum HammerMaterials implements IItemTier {
     OBSIDIAN(4, 1337 * 2, 5.0F / 3.5f, 7, -3.5F, 15, () -> {
         return Ingredient.fromTag(Tags.Items.OBSIDIAN);
     }, "obsidian", Tags.Items.OBSIDIAN),
-    // TODO configure
-    PAPER(0, 13, 1.8F / 3.5F, 1, 0, 17, () -> {
+    PAPER(0, 13, 1.8F / 3.5F, 0, -3.0F, 17, () -> {
         return Ingredient.fromTag(ModTags.Items.PAPER);
     }, "paper", ModTags.Items.PAPER),
     PRISMARINE(3, 750, 7.0F / 3.5F, 6, -2.3F, 20, () -> {
