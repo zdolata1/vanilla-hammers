@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "group": "vanillahammers",
   "pattern": [
-    "DdD",
-    " s ",
+    "DDD",
+    "DsD",
     " s "
   ],
   "key": {
-    "d": {
-      "tag": "forge:dusts/prismarine"
-    },
     "D": {
       "tag": "forge:prismarine"
     },

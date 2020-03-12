@@ -61,10 +61,10 @@ public enum HammerMaterials implements IItemTier {
     }, "paper", ModTags.Items.PAPER),
     PRISMARINE(3, 750, 7.0F / 3.5F, 6, -2.3F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.DUSTS_PRISMARINE);
-    }, "prismarine", Tags.Items.DUSTS_PRISMARINE, ModTags.Items.PRISMARINE),
+    }, "prismarine", ModTags.Items.PRISMARINE),
     QUARTZ(2, 155, 8.0F / 3.5f, 5, -2.0F, 18, () -> {
         return Ingredient.fromTag(Tags.Items.GEMS_QUARTZ);
-    }, "quartz", Tags.Items.GEMS_QUARTZ, Tags.Items.STORAGE_BLOCKS_QUARTZ),
+    }, "quartz", Tags.Items.STORAGE_BLOCKS_QUARTZ),
     REDSTONE(2, 193, 6.0F / 3.5F, 3, -2.5F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.DUSTS_REDSTONE);
     }, "redstone", Tags.Items.STORAGE_BLOCKS_REDSTONE),
