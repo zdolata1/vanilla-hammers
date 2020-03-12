@@ -3,6 +3,7 @@ package de.melanx.vanillahammers.common;
 import de.melanx.vanillahammers.data.tags.ModTags;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.Tag;
@@ -28,6 +29,14 @@ public enum HammerMaterials implements IItemTier {
         return Ingredient.fromTag(Tags.Items.GEMS_DIAMOND);
     }, "diamond", Tags.Items.GEMS_DIAMOND, Tags.Items.STORAGE_BLOCKS_DIAMOND),
 
+    // TODO configure
+    BONE(1, 206, 4.9F / 3.5F, 2, 2, 17, () -> {
+        return Ingredient.fromTag(Tags.Items.BONES);
+    }, "bone", ModTags.Items.BONE_BLOCK),
+    // TODO configure
+    COAL(1, 155, 4.9F / 3.5F, 2, 2, 17, () -> {
+        return Ingredient.fromItems(Items.COAL);
+    }, "coal", Tags.Items.STORAGE_BLOCKS_COAL),
     EMERALD(3, 1859, 12.0F / 3.5f, 11, -3.0F, 25, () -> {
         return Ingredient.fromTag(Tags.Items.GEMS_EMERALD);
     }, "emerald", Tags.Items.GEMS_EMERALD, Tags.Items.STORAGE_BLOCKS_EMERALD),
@@ -42,19 +51,26 @@ public enum HammerMaterials implements IItemTier {
     }, "glowstone", ModTags.Items.STORAGE_BLOCKS_GLOWSTONE),
     LAPIS(2, 193, 6.0f / 3.5f, 3, -2.5F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.GEMS_LAPIS);
-    }, "lapis", Tags.Items.GEMS_LAPIS, Tags.Items.STORAGE_BLOCKS_LAPIS),
+    }, "lapis", Tags.Items.STORAGE_BLOCKS_LAPIS),
     NETHER(1, 280, 5.0F / 3.5f, 4, -2.1F, 66, () -> {
         return Ingredient.fromTag(ModTags.Items.NETHER_BRICKS);
     }, "nether", ModTags.Items.NETHER_BRICKS),
     OBSIDIAN(4, 1337 * 2, 5.0F / 3.5f, 7, -3.5F, 15, () -> {
         return Ingredient.fromTag(Tags.Items.OBSIDIAN);
     }, "obsidian", Tags.Items.OBSIDIAN),
+    // TODO configure
+    PAPER(0, 13, 1.8F / 3.5F, 1, 0, 17, () -> {
+        return Ingredient.fromTag(ModTags.Items.PAPER);
+    }, "paper", ModTags.Items.PAPER),
     PRISMARINE(3, 750, 7.0F / 3.5F, 6, -2.3F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.DUSTS_PRISMARINE);
     }, "prismarine", Tags.Items.DUSTS_PRISMARINE, ModTags.Items.PRISMARINE),
     QUARTZ(2, 155, 8.0F / 3.5f, 5, -2.0F, 18, () -> {
         return Ingredient.fromTag(Tags.Items.GEMS_QUARTZ);
     }, "quartz", Tags.Items.GEMS_QUARTZ, Tags.Items.STORAGE_BLOCKS_QUARTZ),
+    REDSTONE(2, 193, 6.0F / 3.5F, 3, -2.5F, 20, () -> {
+        return Ingredient.fromTag(Tags.Items.DUSTS_REDSTONE);
+    }, "redstone", Tags.Items.STORAGE_BLOCKS_REDSTONE),
     SLIME(2, 1500, 6f / 3.5f, 7, -3.0F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.SLIMEBALLS);
     }, "slime", ModTags.Items.SLIME_BLOCK);

@@ -12,6 +12,7 @@ public class ItemTags extends ItemTagsProvider {
 
     @Override
     protected void registerTags() {
+        getBuilder(ModTags.Items.PAPER).add(ModTags.Items.PAPER);
         getBuilder(ModTags.Items.HEADS).add(ModTags.Items.CREEPER_HEAD, ModTags.Items.DRAGON_HEAD, ModTags.Items.PLAYER_HEAD, ModTags.Items.ZOMBIE_HEAD);
         getBuilder(ModTags.Items.CREEPER_HEAD).add(Items.CREEPER_HEAD);
         getBuilder(ModTags.Items.DRAGON_HEAD).add(Items.DRAGON_HEAD);
@@ -19,6 +20,7 @@ public class ItemTags extends ItemTagsProvider {
         getBuilder(ModTags.Items.ZOMBIE_HEAD).add(Items.ZOMBIE_HEAD);
         getBuilder(ModTags.Items.MAGMA_CREAM).add(Items.MAGMA_CREAM);
 
+        copy(ModTags.Blocks.BONE_BLOCK, ModTags.Items.BONE_BLOCK);
         copy(ModTags.Blocks.STORAGE_BLOCKS_GLOWSTONE, ModTags.Items.STORAGE_BLOCKS_GLOWSTONE);
         copy(ModTags.Blocks.MAGMA_BLOCK, ModTags.Items.MAGMA_BLOCK);
         copy(ModTags.Blocks.NETHER_BRICKS, ModTags.Items.NETHER_BRICKS);

@@ -10,6 +10,7 @@ import net.minecraft.util.ResourceLocation;
 public class ModTags {
 
     public static class Blocks {
+        public static final Tag<Block> BONE_BLOCK = tag("bone_block");
         public static final Tag<Block> STORAGE_BLOCKS_GLOWSTONE = tag("storage_blocks/glowstone");
         public static final Tag<Block> MAGMA_BLOCK = tag("magma_block");
         public static final Tag<Block> NETHER_BRICKS = tag("netherbricks");
@@ -22,11 +23,14 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final Tag<Item> BONE_BLOCK = tag("bone_block");
         public static final Tag<Item> STORAGE_BLOCKS_GLOWSTONE = tag("storage_blocks/glowstone");
         public static final Tag<Item> MAGMA_BLOCK = tag("magma_block");
         public static final Tag<Item> NETHER_BRICKS = tag("netherbricks");
         public static final Tag<Item> PRISMARINE = tag("prismarine");
         public static final Tag<Item> SLIME_BLOCK = tag("slime_block");
+
+        public static final Tag<Item> PAPER = tag("paper");
 
         public static final Tag<Item> HEADS = tag("heads");
 

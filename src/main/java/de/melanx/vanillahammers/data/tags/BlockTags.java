@@ -12,6 +12,7 @@ public class BlockTags extends BlockTagsProvider {
 
     @Override
     protected void registerTags() {
+        getBuilder(ModTags.Blocks.BONE_BLOCK).add(Blocks.BONE_BLOCK);
         getBuilder(ModTags.Blocks.STORAGE_BLOCKS_GLOWSTONE).add(Blocks.GLOWSTONE);
         getBuilder(ModTags.Blocks.MAGMA_BLOCK).add(Blocks.MAGMA_BLOCK);
         getBuilder(ModTags.Blocks.NETHER_BRICKS).add(Blocks.NETHER_BRICKS);
