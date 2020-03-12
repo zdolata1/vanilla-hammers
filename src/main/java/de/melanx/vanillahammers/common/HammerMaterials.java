@@ -41,7 +41,7 @@ public enum HammerMaterials implements IItemTier {
     }, "lapis", Tags.Items.GEMS_LAPIS, Tags.Items.STORAGE_BLOCKS_LAPIS),
     FIERY(3, 750, 7.0F / 3.5f, 6, -2.3F, 15, () -> {
         return Ingredient.fromTag(ModTags.Items.MAGMA_BLOCK);
-    }, "fiery", ModTags.Items.MAGMA_CREAM, ModTags.Items.MAGMA_BLOCK),
+    }, "fiery", ModTags.Items.MAGMA_BLOCK),
     PRISMARINE(3, 750, 7.0F / 3.5F, 6, -2.3F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.DUSTS_PRISMARINE);
     }, "prismarine", Tags.Items.DUSTS_PRISMARINE, ModTags.Items.PRISMARINE),
@@ -50,13 +50,13 @@ public enum HammerMaterials implements IItemTier {
     }, "ender", ModTags.Items.DRAGON_HEAD, Tags.Items.END_STONES),
     SLIME(2, 1500, 6f / 3.5f, 7, -3.0F, 20, () -> {
         return Ingredient.fromTag(Tags.Items.SLIMEBALLS);
-    }, "slime", Tags.Items.SLIMEBALLS, ModTags.Items.SLIME_BLOCK),
+    }, "slime", ModTags.Items.SLIME_BLOCK),
     GLOWSTONE(2, 193, 5.0F / 3.5f, 5, -2.3F, 35, () -> {
         return Ingredient.fromTag(ModTags.Items.STORAGE_BLOCKS_GLOWSTONE);
-    }, "glowstone", Tags.Items.DUSTS_GLOWSTONE, ModTags.Items.STORAGE_BLOCKS_GLOWSTONE),
+    }, "glowstone", ModTags.Items.STORAGE_BLOCKS_GLOWSTONE),
     NETHER(1, 280, 5.0F / 3.5f, 4, -2.1F, 66, () -> {
         return Ingredient.fromTag(ModTags.Items.NETHER_BRICKS);
-    }, "nether", Tags.Items.NETHERRACK, ModTags.Items.NETHER_BRICKS);
+    }, "nether", ModTags.Items.NETHER_BRICKS);
 
     private final int harvestLevel;
     private final int durability;
