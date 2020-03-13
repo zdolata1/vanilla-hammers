@@ -12,7 +12,7 @@ public class ItemTags extends ItemTagsProvider {
 
     @Override
     protected void registerTags() {
-        getBuilder(ModTags.Items.PAPER).add(ModTags.Items.PAPER);
+        getBuilder(ModTags.Items.PAPER).add(Items.PAPER);
         getBuilder(ModTags.Items.HEADS).add(ModTags.Items.CREEPER_HEAD, ModTags.Items.DRAGON_HEAD, ModTags.Items.PLAYER_HEAD, ModTags.Items.ZOMBIE_HEAD);
         getBuilder(ModTags.Items.CREEPER_HEAD).add(Items.CREEPER_HEAD);
         getBuilder(ModTags.Items.DRAGON_HEAD).add(Items.DRAGON_HEAD);

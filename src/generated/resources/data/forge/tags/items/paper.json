@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#forge:paper"
+    "minecraft:paper"
   ]
 }
