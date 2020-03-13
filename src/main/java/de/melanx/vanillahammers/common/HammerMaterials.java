@@ -137,10 +137,6 @@ public enum HammerMaterials implements IItemTier {
         return this.repairMaterial.getValue();
     }
 
-    public String getPrefix() {
-        return this.prefix;
-    }
-
     public Tag<Item> getTagIngredient1() {
         return this.tagIngredient1;
     }

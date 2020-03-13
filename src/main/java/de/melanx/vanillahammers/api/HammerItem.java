@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 public class HammerItem extends PickaxeItem {
     private IItemTier toolMaterial;
 
-    public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
-        super(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
+    public HammerItem(IItemTier toolMaterial, float attackSpeed) {
+        super(toolMaterial, 0, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
         this.toolMaterial = toolMaterial;
     }
 
