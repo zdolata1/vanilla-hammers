@@ -8,7 +8,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import static de.melanx.vanillahammers.common.HammerMaterials.*;
+import static de.melanx.morevanillalib.api.BigBreakMaterials.*;
 
 public class HammerRegistry {
 

@@ -1,7 +1,7 @@
 package de.melanx.vanillahammers.data;
 
+import de.melanx.morevanillalib.api.BigBreakMaterials;
 import de.melanx.vanillahammers.VanillaHammers;
-import de.melanx.vanillahammers.common.HammerMaterials;
 import de.melanx.vanillahammers.common.HammerRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
@@ -24,7 +24,7 @@ public class Recipes extends RecipeProvider {
     protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
         int i = 0;
         for (RegistryObject<Item> item : HammerRegistry.ITEMS.getEntries()) {
-            HammerMaterials hammer = HammerMaterials.values()[i];
+            BigBreakMaterials hammer = BigBreakMaterials.values()[i];
             Tag<Item> tagIngredient1 = hammer.getTagIngredient1();
             Tag<Item> tagIngredient2 = hammer.getTagIngredient2();
             ShapedRecipeBuilder recipe = createRecipe(item.get(), tagIngredient1, tagIngredient2);

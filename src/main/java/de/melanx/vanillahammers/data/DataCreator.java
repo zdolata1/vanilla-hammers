@@ -1,7 +1,6 @@
 package de.melanx.vanillahammers.data;
 
 import de.melanx.vanillahammers.VanillaHammers;
-import de.melanx.vanillahammers.data.tags.BlockTags;
 import de.melanx.vanillahammers.data.tags.ItemTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
@@ -18,7 +17,6 @@ public class DataCreator {
         ExistingFileHelper helper = event.getExistingFileHelper();
 
         if (event.includeServer()) {
-            generator.addProvider(new BlockTags(generator));
             generator.addProvider(new ItemTags(generator));
             generator.addProvider(new Recipes(generator));
         }
