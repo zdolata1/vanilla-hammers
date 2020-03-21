@@ -17,7 +17,7 @@ public class HammerRegistry {
 
     public static final RegistryObject<Item> BONE_HAMMER = ITEMS.register("bone" + POSTFIX, () -> new HammerItem(BONE, BONE.getAttackSpeed()));
     public static final RegistryObject<Item> COAL_HAMMER = ITEMS.register("coal" + POSTFIX, () -> new HammerItem(COAL, COAL.getAttackSpeed()));
-    public static final RegistryObject<Item> EMERALD_HAMMER = ITEMS.register("emderald" + POSTFIX, () -> new HammerItem(EMERALD, EMERALD.getAttackSpeed()));
+    public static final RegistryObject<Item> EMERALD_HAMMER = ITEMS.register("emerald" + POSTFIX, () -> new HammerItem(EMERALD, EMERALD.getAttackSpeed()));
     public static final RegistryObject<Item> ENDER_HAMMER = ITEMS.register("ender" + POSTFIX, () -> new HammerItem(ENDER, ENDER.getAttackSpeed()));
     public static final RegistryObject<Item> FIERY_HAMMER = ITEMS.register("fiery" + POSTFIX, () -> new HammerItem(FIERY, FIERY.getAttackSpeed()));
     public static final RegistryObject<Item> GLOWSTONE_HAMMER = ITEMS.register("glowstone" + POSTFIX, () -> new HammerItem(GLOWSTONE, GLOWSTONE.getAttackSpeed()));
