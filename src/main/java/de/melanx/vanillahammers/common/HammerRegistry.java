@@ -15,6 +15,12 @@ public class HammerRegistry {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, VanillaHammers.MODID);
     public static final String POSTFIX = "_hammer";
 
+    public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register("wooden" + POSTFIX, () -> new HammerItem(WOOD, WOOD.getAttackSpeed()));
+    public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register("stone" + POSTFIX, () -> new HammerItem(STONE, STONE.getAttackSpeed()));
+    public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron" + POSTFIX, () -> new HammerItem(WOOD, WOOD.getAttackSpeed()));
+    public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register("golden" + POSTFIX, () -> new HammerItem(WOOD, WOOD.getAttackSpeed()));
+    public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register("diamond" + POSTFIX, () -> new HammerItem(WOOD, WOOD.getAttackSpeed()));
+
     public static final RegistryObject<Item> BONE_HAMMER = ITEMS.register("bone" + POSTFIX, () -> new HammerItem(BONE, BONE.getAttackSpeed()));
     public static final RegistryObject<Item> COAL_HAMMER = ITEMS.register("coal" + POSTFIX, () -> new HammerItem(COAL, COAL.getAttackSpeed()));
     public static final RegistryObject<Item> EMERALD_HAMMER = ITEMS.register("emerald" + POSTFIX, () -> new HammerItem(EMERALD, EMERALD.getAttackSpeed()));
