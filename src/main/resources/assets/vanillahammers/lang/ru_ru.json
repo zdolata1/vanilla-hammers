@@ -13,5 +13,9 @@
   "item.vanillahammers.slime_hammer": "Слизневый молот",
   "item.vanillahammers.ender_hammer": "Эндер-молот",
   "item.vanillahammers.glowstone_hammer": "Светокаменный молот",
-  "item.vanillahammers.nether_hammer": "Незерский молот"
+  "item.vanillahammers.nether_hammer": "Незерский молот",
+  "item.vanillahammers.coal_hammer": "Угольный молот",
+  "item.vanillahammers.bone_hammer": "Костяной молот",
+  "item.vanillahammers.redstone_hammer": "Редстоуновый молот",
+  "item.vanillahammers.paper_hammer": "Бумажный молот"
 }
