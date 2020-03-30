@@ -20,6 +20,13 @@ Adds a ton of new hammers to the game!
     side="BOTH"
 
 [[dependencies.vanillahammers]]
+    modId="morevanillalib"
+    mandatory=true
+    versionRange="[1.0.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.vanillahammers]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2,)"

@@ -13,7 +13,7 @@ This mod is just a fork of the Fabric mod and ported to Forge.
 ## Wiki
 
 For more information about the mod, check out the wiki:
-  - Item Stats *coming soon*
+  - [Item Stats](https://github.com/MelanX/vanilla-hammers/wiki/Item-Stats) (WIP)
 
 ## License
 
