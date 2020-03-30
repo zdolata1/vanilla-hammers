@@ -3,7 +3,7 @@ package de.melanx.vanillahammers.data.tags;
 import de.melanx.morevanillalib.api.BigBreakItem;
 import de.melanx.morevanillalib.api.BigBreakMaterials;
 import de.melanx.morevanillalib.data.ModTags;
-import de.melanx.vanillahammers.common.HammerRegistry;
+import de.melanx.vanillahammers.items.HammerRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.ItemTagsProvider;
 import net.minecraft.item.Item;

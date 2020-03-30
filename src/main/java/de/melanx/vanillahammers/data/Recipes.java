@@ -2,7 +2,7 @@ package de.melanx.vanillahammers.data;
 
 import de.melanx.morevanillalib.api.BigBreakMaterials;
 import de.melanx.vanillahammers.VanillaHammers;
-import de.melanx.vanillahammers.common.HammerRegistry;
+import de.melanx.vanillahammers.items.HammerRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.RecipeProvider;
