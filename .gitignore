@@ -24,3 +24,5 @@ bin/
 
 run*/
 .cache
+templates
+Sphaxify*
