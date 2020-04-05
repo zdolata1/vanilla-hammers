@@ -17,9 +17,9 @@ public class HammerRegistry {
 
     public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register("wooden" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
     public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register("stone" + POSTFIX, () -> new BigBreakItem(STONE, STONE.getAttackSpeed()));
-    public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
-    public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register("golden" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
-    public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register("diamond" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
+    public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron" + POSTFIX, () -> new BigBreakItem(IRON, IRON.getAttackSpeed()));
+    public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register("golden" + POSTFIX, () -> new BigBreakItem(GOLD, GOLD.getAttackSpeed()));
+    public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register("diamond" + POSTFIX, () -> new BigBreakItem(DIAMOND, DIAMOND.getAttackSpeed()));
 
     public static final RegistryObject<Item> BONE_HAMMER = ITEMS.register("bone" + POSTFIX, () -> new BigBreakItem(BONE, BONE.getAttackSpeed()));
     public static final RegistryObject<Item> COAL_HAMMER = ITEMS.register("coal" + POSTFIX, () -> new BigBreakItem(COAL, COAL.getAttackSpeed()));
