@@ -15,6 +15,7 @@
     "1.0": "Port to 1.15"
   },
   "1.15.2": {
+    "2.0.2": "Added tags for vanilla material tools",
     "2.0.1": "Fixed wrong harvest levels for iron/gold/diamond",
     "2.0": "Added MoreVanillaLib as dependency\nAdded 4 new materials\nAdded a few features (read with JEI)\nAdded russian translation\nChanged a few values\nMoved config to new lib",
     "1.0": "Port to 1.15"
