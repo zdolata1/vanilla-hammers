@@ -82,8 +82,8 @@ repositories {
 		name = "Progwml6 maven"
 		url = "https://dvs1.progwml6.com/files/maven/"
 	}
-	flatDir {
-		dirs "libs"
+	maven {
+		url = "https://maven.melanx.de"
 	}
 }
 
@@ -91,7 +91,7 @@ dependencies {
 	minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 	runtimeOnly fg.deobf("mezz.jei:jei-1.15.2:6.0.0.2")
 	compileOnly fg.deobf("mezz.jei:jei-1.15.2:6.0.0.2:api")
-	compile fg.deobf("de.melanx.morevanillalib:morevanillalib:1.15.2-1.1.1")
+	compile fg.deobf("de.melanx.morevanillalib:morevanillalib-1.15.2:1.1.1+1")
 }
 
 jar {
