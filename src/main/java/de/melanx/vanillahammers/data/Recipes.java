@@ -25,27 +25,10 @@ public class Recipes extends RecipeProvider {
         int i = 0;
         for (RegistryObject<Item> item : HammerRegistry.ITEMS.getEntries()) {
             BigBreakMaterials hammer = BigBreakMaterials.values()[i];
-            Tag<Item> tagIngredient1 = hammer.getTagIngredient1();
-            Tag<Item> tagIngredient2 = hammer.getTagIngredient2();
-            ShapedRecipeBuilder recipe = createRecipe(item.get(), tagIngredient1, tagIngredient2);
+            Tag<Item> tagIngredient = hammer.getTagIngredient();
+            ShapedRecipeBuilder recipe = createRecipe(item.get(), tagIngredient);
             recipe.build(consumer);
             i++;
-        }
-    }
-
-    private ShapedRecipeBuilder createRecipe(Item result, Tag<Item> ingredient1, Tag<Item> ingredient2) {
-        if (ingredient2 == null) {
-            return createRecipe(result, ingredient1);
-        } else {
-            return ShapedRecipeBuilder.shapedRecipe(result)
-                    .key('d', ingredient1)
-                    .key('D', ingredient2)
-                    .key('s', Items.STICK)
-                    .patternLine("DdD")
-                    .patternLine(" s ")
-                    .patternLine(" s ")
-                    .setGroup(VanillaHammers.MODID)
-                    .addCriterion("has_material", hasItem(ingredient1));
         }
     }
 
@@ -53,8 +36,8 @@ public class Recipes extends RecipeProvider {
         return ShapedRecipeBuilder.shapedRecipe(result)
                 .key('D', ingredient)
                 .key('s', Items.STICK)
-                .patternLine("DDD")
                 .patternLine("DsD")
+                .patternLine(" s ")
                 .patternLine(" s ")
                 .setGroup(VanillaHammers.MODID)
                 .addCriterion("has_material", hasItem(ingredient));

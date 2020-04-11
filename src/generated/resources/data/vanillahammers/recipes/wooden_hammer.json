@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "group": "vanillahammers",
   "pattern": [
-    "DdD",
+    "DsD",
     " s ",
     " s "
   ],
   "key": {
-    "d": {
-      "tag": "minecraft:planks"
-    },
     "D": {
       "tag": "minecraft:logs"
     },

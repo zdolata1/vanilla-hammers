@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "group": "vanillahammers",
   "pattern": [
-    "DDD",
     "DsD",
+    " s ",
     " s "
   ],
   "key": {
     "D": {
-      "tag": "forge:paper"
+      "tag": "forge:paper_bundle"
     },
     "s": {
       "item": "minecraft:stick"
