@@ -10,7 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class HammerItem extends PickaxeItem {
-    private IItemTier toolMaterial;
+    private final IItemTier toolMaterial;
 
     public HammerItem(IItemTier toolMaterial, int attackDamage, float attackSpeed) {
         super(toolMaterial, attackDamage, attackSpeed, new Item.Properties().group(ItemGroup.TOOLS));
@@ -19,8 +19,9 @@ public class HammerItem extends PickaxeItem {
 
     @Override
     public boolean canPlayerBreakBlockWhileHolding(BlockState state, World world, BlockPos pos, PlayerEntity player) {
+        int radius = 1;
         if (player.isSneaking()) {
-            return true;
+            radius = 0;
         }
 
         float originHardness = world.getBlockState(pos).getBlockHardness(null, null);
@@ -28,7 +29,7 @@ public class HammerItem extends PickaxeItem {
         // only do a 3x3 break if the player's tool is effective on the block they are breaking
         // this makes it so breaking gravel doesn't break nearby stone
         if (player.getHeldItemMainhand().canHarvestBlock(world.getBlockState(pos))) {
-            BlockBreaker.breakInRadius(world, player, 1, (breakState) -> {
+            BlockBreaker.breakInRadius(world, player, radius, (breakState) -> {
                 double hardness = breakState.getBlockHardness(null, null);
                 boolean isEffective = player.getHeldItemMainhand().canHarvestBlock(breakState);
                 boolean verifyHardness = hardness < originHardness * 5 && hardness > 0;
