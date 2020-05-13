@@ -1,8 +1,7 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers-forge",
   "promos": {
-    "1.14.4-latest": "1.0",
-    "1.14.4-recommended": "1.0",
+    "1.14.4-latest": "1.1",
     "1.15-latest": "1.0",
     "1.15.1-latest": "1.0",
     "1.15.2-latest": "2.1"
@@ -24,6 +23,7 @@
     "1.0": "Port to 1.15"
   },
   "1.14.4": {
+    "1.1": "Fixed xp drops\nFixed OreExcavation support\nFixed shulker not stores data",
     "1.0": "Initial release for forge"
   }
 }
