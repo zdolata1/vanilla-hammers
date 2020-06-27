@@ -12,7 +12,7 @@ import static de.melanx.morevanillalib.api.BigBreakMaterials.*;
 
 public class HammerRegistry {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, VanillaHammers.MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, VanillaHammers.MODID);
     public static final String POSTFIX = "_hammer";
 
     public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register("wooden" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
