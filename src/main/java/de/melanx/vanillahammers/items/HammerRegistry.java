@@ -15,10 +15,10 @@ public class HammerRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, VanillaHammers.MODID);
     public static final String POSTFIX = "_hammer";
 
-    public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register("wooden" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
+    public static final RegistryObject<Item> WOOD_HAMMER = ITEMS.register("wood" + POSTFIX, () -> new BigBreakItem(WOOD, WOOD.getAttackSpeed()));
     public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register("stone" + POSTFIX, () -> new BigBreakItem(STONE, STONE.getAttackSpeed()));
     public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron" + POSTFIX, () -> new BigBreakItem(IRON, IRON.getAttackSpeed()));
-    public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register("golden" + POSTFIX, () -> new BigBreakItem(GOLD, GOLD.getAttackSpeed()));
+    public static final RegistryObject<Item> GOLD_HAMMER = ITEMS.register("gold" + POSTFIX, () -> new BigBreakItem(GOLD, GOLD.getAttackSpeed()));
     public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register("diamond" + POSTFIX, () -> new BigBreakItem(DIAMOND, DIAMOND.getAttackSpeed()));
     public static final RegistryObject<Item> NETHERITE_HAMMER = ITEMS.register("netherite"+ POSTFIX, () -> new BigBreakItem(NETHERITE, NETHERITE.getAttackSpeed()));
 

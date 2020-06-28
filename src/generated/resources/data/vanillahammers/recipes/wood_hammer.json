@@ -8,13 +8,13 @@
   ],
   "key": {
     "D": {
-      "tag": "forge:storage_blocks/gold"
+      "tag": "minecraft:logs"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "vanillahammers:golden_hammer"
+    "item": "vanillahammers:wood_hammer"
   }
 }

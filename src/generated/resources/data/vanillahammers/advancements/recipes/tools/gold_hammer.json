@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "vanillahammers:golden_hammer"
+      "vanillahammers:gold_hammer"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "vanillahammers:golden_hammer"
+        "recipe": "vanillahammers:gold_hammer"
       }
     }
   },
