@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "vanillahammers:wooden_hammer"
+      "vanillahammers:wood_hammer"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "vanillahammers:wooden_hammer"
+        "recipe": "vanillahammers:wood_hammer"
       }
     }
   },

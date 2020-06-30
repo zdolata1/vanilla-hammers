@@ -18,8 +18,8 @@ public class DataCreator {
         ExistingFileHelper helper = event.getExistingFileHelper();
 
         if (event.includeServer()) {
-//            generator.addProvider(new ItemTags(generator, new BlockTagsProvider(generator)));
-//            generator.addProvider(new Recipes(generator));
+            generator.addProvider(new ItemTags(generator, new BlockTagsProvider(generator)));
+            generator.addProvider(new Recipes(generator));
         }
         if (event.includeClient()) {
             generator.addProvider(new Languages.English(generator));
