@@ -17,14 +17,14 @@ Adds a ton of new hammers to the game!
 [[dependencies.vanillahammers]]
     modId="forge"
     mandatory=true
-    versionRange="[33,)"
+    versionRange="[33.0.18,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.vanillahammers]]
     modId="morevanillalib"
     mandatory=true
-    versionRange="[1.2.9,)"
+    versionRange="[1.2.12,)"
     ordering="NONE"
     side="BOTH"
 

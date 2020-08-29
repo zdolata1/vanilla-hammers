@@ -1,6 +1,5 @@
 package de.melanx.vanillahammers.items;
 
-import de.melanx.morevanillalib.api.BigBreakItem;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -8,7 +7,7 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 
-public class ObsidianHammer extends BigBreakItem {
+public class ObsidianHammer extends HammerItem {
 
     public ObsidianHammer(IItemTier toolMaterial, float attackSpeed) {
         super(toolMaterial, attackSpeed);
