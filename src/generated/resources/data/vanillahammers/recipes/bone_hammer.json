@@ -16,5 +16,11 @@
   },
   "result": {
     "item": "vanillahammers:bone_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "value": true,
+      "type": "morevanillalib:vanilla_only"
+    }
+  ]
 }

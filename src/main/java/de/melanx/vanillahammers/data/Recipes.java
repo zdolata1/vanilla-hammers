@@ -1,6 +1,9 @@
 package de.melanx.vanillahammers.data;
 
+import com.google.gson.JsonArray;
 import de.melanx.morevanillalib.api.BigBreakMaterials;
+import de.melanx.morevanillalib.core.WrapperResult;
+import de.melanx.morevanillalib.core.crafting.VanillaCondition;
 import de.melanx.vanillahammers.VanillaHammers;
 import de.melanx.vanillahammers.items.HammerRegistry;
 import net.minecraft.data.DataGenerator;
@@ -12,6 +15,7 @@ import net.minecraft.item.Items;
 import net.minecraft.tags.ITag;
 import net.minecraftforge.fml.RegistryObject;
 
+import javax.annotation.Nonnull;
 import java.util.function.Consumer;
 
 public class Recipes extends RecipeProvider {
@@ -21,13 +25,21 @@ public class Recipes extends RecipeProvider {
     }
 
     @Override
-    protected void registerRecipes(Consumer<IFinishedRecipe> consumer) {
+    protected void registerRecipes(@Nonnull Consumer<IFinishedRecipe> consumer) {
         int i = 0;
         for (RegistryObject<Item> item : HammerRegistry.ITEMS.getEntries()) {
             BigBreakMaterials hammer = BigBreakMaterials.values()[i];
             ITag.INamedTag<Item> tagIngredient = hammer.getTagIngredient();
             ShapedRecipeBuilder recipe = createRecipe(item.get(), tagIngredient);
-            recipe.build(consumer);
+            if (!hammer.isVanilla()) {
+                recipe.build(WrapperResult.transformJson(consumer, json -> {
+                    JsonArray array = new JsonArray();
+                    array.add(VanillaCondition.SERIALIZER.getJson(new VanillaCondition(true)));
+                    json.add("conditions", array);
+                }));
+            } else {
+                recipe.build(consumer);
+            }
             i++;
         }
     }

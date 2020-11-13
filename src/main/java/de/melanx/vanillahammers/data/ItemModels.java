@@ -4,7 +4,7 @@ import de.melanx.vanillahammers.VanillaHammers;
 import de.melanx.vanillahammers.items.HammerRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.model.generators.ExistingFileHelper;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ItemModels extends de.melanx.morevanillalib.data.ItemModels {

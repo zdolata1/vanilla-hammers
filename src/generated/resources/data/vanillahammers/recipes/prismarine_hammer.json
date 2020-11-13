@@ -16,5 +16,11 @@
   },
   "result": {
     "item": "vanillahammers:prismarine_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "value": true,
+      "type": "morevanillalib:vanilla_only"
+    }
+  ]
 }
