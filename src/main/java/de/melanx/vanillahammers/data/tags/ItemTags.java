@@ -37,50 +37,8 @@ public class ItemTags extends ItemTagsProvider {
                 case DIAMOND:
                     getOrCreateBuilder(ModTags.Items.DIAMOND_TOOLS).add(item);
                     break;
-                case BONE:
-                    getOrCreateBuilder(ModTags.Items.BONE_TOOLS).add(item);
-                    break;
-                case COAL:
-                    getOrCreateBuilder(ModTags.Items.COAL_TOOLS).add(item);
-                    break;
-                case EMERALD:
-                    getOrCreateBuilder(ModTags.Items.EMERALD_TOOLS).add(item);
-                    break;
-                case ENDER:
-                    getOrCreateBuilder(ModTags.Items.ENDER_TOOLS).add(item);
-                    break;
-                case FIERY:
-                    getOrCreateBuilder(ModTags.Items.FIERY_TOOLS).add(item);
-                    break;
-                case GLOWSTONE:
-                    getOrCreateBuilder(ModTags.Items.GLOWSTONE_TOOLS).add(item);
-                    break;
-                case LAPIS:
-                    getOrCreateBuilder(ModTags.Items.LAPIS_TOOLS).add(item);
-                    break;
-                case NETHER:
-                    getOrCreateBuilder(ModTags.Items.NETHER_TOOLS).add(item);
-                    break;
                 case NETHERITE:
                     getOrCreateBuilder(ModTags.Items.NETHERITE_TOOLS).add(item);
-                    break;
-                case OBSIDIAN:
-                    getOrCreateBuilder(ModTags.Items.OBSIDIAN_TOOLS).add(item);
-                    break;
-                case PAPER:
-                    getOrCreateBuilder(ModTags.Items.PAPER_TOOLS).add(item);
-                    break;
-                case PRISMARINE:
-                    getOrCreateBuilder(ModTags.Items.PRISMARINE_TOOLS).add(item);
-                    break;
-                case QUARTZ:
-                    getOrCreateBuilder(ModTags.Items.QUARTZ_TOOLS).add(item);
-                    break;
-                case REDSTONE:
-                    getOrCreateBuilder(ModTags.Items.REDSTONE_TOOLS).add(item);
-                    break;
-                case SLIME:
-                    getOrCreateBuilder(ModTags.Items.SLIME_TOOLS).add(item);
                     break;
             }
         }
